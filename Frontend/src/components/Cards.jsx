@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cards() {
+function Cards({ item }) {
   return (
     <>
       <div className="mt-4 my-3 p-3">

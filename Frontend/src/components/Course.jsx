@@ -3,8 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import list from "../../public/list.json"
 import Slider from "react-slick";
-import {Link} from "react-router-dom"
+
+import {Link} from "react-router-dom";
 function Course() {
+  
   const filterData=list.filter((data)=>data.category==="Free");
     var settings = {
       dots: true,
@@ -40,7 +42,8 @@ function Course() {
         }
       ]
     };
-
+   
+    
   return (
     <>
     <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
@@ -72,7 +75,7 @@ We have provided courses in most reasonable cost with best Teachers.
   <figure><img src="https://img.freepik.com/premium-photo/digital-marketing-cro-conversion-rate-optimization-analytics-management-web-development-platform-growth-business-soft-blue-background-3d-render-illustration_598821-848.jpg" /></figure>
   <div className="card-body">
     <h2 className="card-title">
-      FullStack Webdevelopement!
+      <a href='/mern'>FullStack Webdevelopement!</a>
       <div className="badge badge-secondary">New</div>
     </h2>
     <p>Beginner to advance...</p>
